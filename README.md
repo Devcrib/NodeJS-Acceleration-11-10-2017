@@ -15,3 +15,7 @@ Medium article has been published to the Devcrib publication on medium
 - [Compose vs Pipe](https://repl.it/@king_tomiiide/compose-vs-pipe)
 
 - [Functors vs Monards](https://repl.it/@king_tomiiide/Functors-vs-Monads)
+
+## Task C
+
+Open the  folder `Task C` in the repo
