@@ -18,4 +18,4 @@ Medium article has been published to the Devcrib publication on medium
 
 ## Task C
 
-Open the  folder `Task C` in the repo
+[Run](https://devcrib.github.io/NodeJS-Acceleration-11-12-2017/Task%20C/index.html)
