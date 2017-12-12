@@ -1,4 +1,4 @@
-[
+const students = [
   {
     "name": "Hernandez Fletcher",
     "gender": "male",

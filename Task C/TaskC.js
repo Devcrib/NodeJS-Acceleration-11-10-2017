@@ -1,7 +1,7 @@
 const LOWER_QUARTILE = 1;
 const MEDIAN_QUARTILE = 2;
 const UPPER_QUARTILE = 3;
-const students = require('./data.json');
+
 
 class GradeSystem{
   constructor(students){
@@ -18,12 +18,12 @@ class GradeSystem{
       'F' : []
      }
     this.students.map( function(student){
-      if(student.score >= 0 < 40) {grades.F.push(student); return;}
+      if(student.score >= 0 && student.score < 40) {grades.F.push(student); return;}
       if(student.score < 45) {grades.E.push(student); return;}
       if(student.score < 50) {grades.D.push(student); return;}
       if(student.score < 60) {grades.C.push(student); return;}
       if(student.score < 75) {grades.B.push(student); return;}
-      if(student.score >= 75 <= 100) {grades.A.push(student); return;}
+      if(student.score >= 75 && student.score <= 100) {grades.A.push(student); return;}
       return;
     });
     return grades;
@@ -70,5 +70,12 @@ class GradeSystem{
 
 
 var school = new GradeSystem(students);
+console.log("-------------------Classify By Grades----------------------");
+console.log(school.classifyByGrades());
+console.log("-------------------Quartiles----------------------");
+console.log("Upper quatile => " + school.quartile(UPPER_QUARTILE));
+console.log("Median => " + school.quartile(MEDIAN_QUARTILE));
+console.log("Lower quatile => " + school.quartile(LOWER_QUARTILE));
+console.log("-------------------predominantGrade----------------------");
+console.log(school.predominantGrade());
 
-console.log(school.quartile(UPPER_QUARTILE));
